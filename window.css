@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  line-height: 100%;
+  background-color: #667fa5;
+  overflow: hidden;
+}
+.firstbox {
+  background-color: #6fa9b9;
+  height: 99vh;
+  max-height: 800px;
+  width: 99vw;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: font-size 1s;
+  border: 2px solid #003d4e;
+}
+.firstbox:hover {
+  cursor: pointer;
+  background-color: #65c0da;
+  transition: font-size 1s;
+  font-size: 10vw;
+}
+.box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  border: 2px solid #003d4e;
+}
+.box > button {
+  margin: 0px;
+  background-color: #6fa9b9;
+  transition: font-size 1s;
+}
+.box > button:hover {
+  background-color: #65c0da;
+  cursor: pointer;
+  transition: font-size 1s;
+  font-size: 4vh;
+}
