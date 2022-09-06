@@ -9,7 +9,6 @@ var utility = ["zero", "one", "two", "three", "four", "five", "six", "seven", "e
         xthree += 4;
         xfour += 4;
     }  
-    const body = document.body;
 var firstbutton = document.getElementById('firstbox')
 function createHTML() {
     return `<div class="box">
@@ -21,11 +20,12 @@ function createHTML() {
 }
 firstbutton.addEventListener('click', ()=> {
     firstbutton.innerHTML = createHTML();
+    console.log(`You are fighting a hydra!`)
 }, {once: true });
 function headchopped(y) {
     var clickedbutton = document.getElementById(`${y}`);
     clickedbutton.removeAttribute("onclick");
-    console.log(`chopped a head ${y}`);
+    console.log(`You chopped ${y} heads`);
     nextArrayIndex();
     clickedbutton.innerHTML = createHTML();
 }
